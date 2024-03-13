@@ -1,5 +1,5 @@
 <script setup>
-const story = await useAsyncStoryblok('/', { version: 'draft' },
+const story = await useAsyncStoryblok('/landing', { version: 'draft' },
 { customParent: 'https://app.storyblok.com' })
 </script>
 
