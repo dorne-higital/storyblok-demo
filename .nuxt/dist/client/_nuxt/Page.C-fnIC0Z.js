@@ -1,0 +1,1 @@
+import{i as a,S as l,T as c,t as e,v as n,U as i,V as _,Q as b}from"./entry.C0thVPMp.js";const k={class:"px-4"},u={__name:"Page",props:{blok:Object},setup(t){return(m,d)=>{const r=a("StoryblokComponent"),s=l("editable");return c((e(),n("div",k,[(e(!0),n(i,null,_(t.blok.body,o=>(e(),b(r,{key:o._uid,blok:o},null,8,["blok"]))),128))])),[[s,t.blok]])}}};export{u as default};

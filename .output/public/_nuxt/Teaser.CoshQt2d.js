@@ -1,0 +1,1 @@
+import{S as a,T as s,t as o,v as c,B as i,y as r}from"./entry.C0thVPMp.js";const l={class:"py-32 text-6xl text-[#50b0ae] font-bold text-center"},_={__name:"Teaser",props:{blok:Object},setup(e){return(n,d)=>{const t=a("editable");return s((o(),c("div",l,[i(r(e.blok.headline),1)])),[[t,e.blok]])}}};export{_ as default};

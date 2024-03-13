@@ -1,0 +1,219 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/node_modules/@storyblok/nuxt/dist/runtime/composables/useAsyncStoryblok.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { useStoryblokApi, useStoryblokBridge } from \"@storyblok/vue\";\nimport { useState, onMounted } from \"#imports\";\nexport const useAsyncStoryblok = async (url, apiOptions = {}, bridgeOptions = {}) => {\n  const uniqueKey = `${JSON.stringify(apiOptions)}${url}`;\n  const story = useState(`${uniqueKey}-state`);\n  const storyblokApiInstance = useStoryblokApi();\n  onMounted(() => {\n    if (story.value && story.value.id) {\n      useStoryblokBridge(\n        story.value.id,\n        (evStory) => story.value = evStory,\n        bridgeOptions\n      );\n    }\n  });\n  if (!story.value) {\n    const { data } = await storyblokApiInstance.get(\n      `cdn/stories/${url}`,\n      apiOptions\n    );\n    story.value = data.story;\n  }\n  ;\n  return story;\n};\n",
+      "start": 1710364424909,
+      "end": 1710364425042,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710364425042,
+      "end": 1710364425042,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710364425042,
+      "end": 1710364425050,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "result": "import { useState } from '#app/composables/state';\nimport { onMounted } from 'vue';\nimport { useStoryblokApi, useStoryblokBridge } from \"@storyblok/vue\";\nexport const useAsyncStoryblok = async (url, apiOptions = {}, bridgeOptions = {}) => {\n  const uniqueKey = `${JSON.stringify(apiOptions)}${url}`;\n  const story = useState(`${uniqueKey}-state`);\n  const storyblokApiInstance = useStoryblokApi();\n  onMounted(() => {\n    if (story.value && story.value.id) {\n      useStoryblokBridge(\n        story.value.id,\n        (evStory) => story.value = evStory,\n        bridgeOptions\n      );\n    }\n  });\n  if (!story.value) {\n    const { data } = await storyblokApiInstance.get(\n      `cdn/stories/${url}`,\n      apiOptions\n    );\n    story.value = data.story;\n  }\n  ;\n  return story;\n};\n",
+      "start": 1710364425050,
+      "end": 1710364425051,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;AAAA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAErE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtF,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACR,CAAC,CAAC,CAAC,CAAC,CAAC;AACL,CAAC,CAAC,CAAC,CAAC,CAAC;AACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACN,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACf,CAAC,CAAC;"
+      }
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710364425051,
+      "end": 1710364425052,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710364425052,
+      "end": 1710364425052,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710364425052,
+      "end": 1710364425052,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710364425052,
+      "end": 1710364425052,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710364425052,
+      "end": 1710364425052,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710364425052,
+      "end": 1710364425052,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710364425052,
+      "end": 1710364425052,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710364425052,
+      "end": 1710364425052,
+      "order": "normal"
+    }
+  ]
+}

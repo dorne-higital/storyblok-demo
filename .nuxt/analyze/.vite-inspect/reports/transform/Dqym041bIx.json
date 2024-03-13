@@ -1,0 +1,219 @@
+{
+  "resolvedId": "virtual:nuxt:/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/.nuxt/components.plugin.mjs",
+  "transforms": [
+    {
+      "name": "virtual",
+      "result": "import { defineNuxtPlugin } from '#app/nuxt'\nimport { LazyFeature, LazyGrid, LazyPage, LazyTeaser } from '#components'\nconst lazyGlobalComponents = [\n  [\"Feature\", LazyFeature],\n[\"Grid\", LazyGrid],\n[\"Page\", LazyPage],\n[\"Teaser\", LazyTeaser],\n  \n]\n\nexport default defineNuxtPlugin({\n  name: 'nuxt:global-components',\n  setup (nuxtApp) {\n    for (const [name, component] of lazyGlobalComponents) {\n      nuxtApp.vueApp.component(name, component)\n      nuxtApp.vueApp.component('Lazy' + name, component)\n    }\n  }\n})\n",
+      "start": 1710364423689,
+      "end": 1710364423689,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710364423690,
+      "end": 1710364423690,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710364423690,
+      "end": 1710364423690,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710364423690,
+      "end": 1710364423690,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710364423690,
+      "end": 1710364423690,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710364423690,
+      "end": 1710364423690,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710364423690,
+      "end": 1710364423690,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710364423690,
+      "end": 1710364423690,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1710364423690,
+      "end": 1710364423690,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710364423690,
+      "end": 1710364423690,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710364423690,
+      "end": 1710364423690,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710364423690,
+      "end": 1710364423690,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710364423690,
+      "end": 1710364423690,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import LazyFeature from '/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/storyblok/Feature.vue?nuxt_component=async&nuxt_component_name=Feature';\nimport LazyGrid from '/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/storyblok/Grid.vue?nuxt_component=async&nuxt_component_name=Grid';\nimport LazyPage from '/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/storyblok/Page.vue?nuxt_component=async&nuxt_component_name=Page';\nimport LazyTeaser from '/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/storyblok/Teaser.vue?nuxt_component=async&nuxt_component_name=Teaser';\nimport { defineNuxtPlugin } from '#app/nuxt'\nconst lazyGlobalComponents = [\n  [\"Feature\", LazyFeature],\n[\"Grid\", LazyGrid],\n[\"Page\", LazyPage],\n[\"Teaser\", LazyTeaser],\n  \n]\n\nexport default defineNuxtPlugin({\n  name: 'nuxt:global-components',\n  setup (nuxtApp) {\n    for (const [name, component] of lazyGlobalComponents) {\n      nuxtApp.vueApp.component(name, component)\n      nuxtApp.vueApp.component('Lazy' + name, component)\n    }\n  }\n})\n",
+      "start": 1710364423690,
+      "end": 1710364423693,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;AAAA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAE5C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC9B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvB,CAAC,CAAC;AACF,CAAC;AACD;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxD,CAAC,CAAC,CAAC,CAAC,CAAC;AACL,CAAC,CAAC,CAAC;AACH,CAAC,CAAC;"
+      }
+    },
+    {
+      "name": "replace",
+      "start": 1710364423693,
+      "end": 1710364423694,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710364423694,
+      "end": 1710364423694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710364423694,
+      "end": 1710364423694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710364423694,
+      "end": 1710364423694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710364423694,
+      "end": 1710364423694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710364423694,
+      "end": 1710364423694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710364423694,
+      "end": 1710364423694,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710364423695,
+      "end": 1710364423695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710364423695,
+      "end": 1710364423695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710364423695,
+      "end": 1710364423695,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710364423695,
+      "end": 1710364423695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710364423695,
+      "end": 1710364423697,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710364423697,
+      "end": 1710364423703,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710364423704,
+      "end": 1710364423704,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710364423704,
+      "end": 1710364423704,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710364423704,
+      "end": 1710364423704,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710364423704,
+      "end": 1710364423704,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710364423704,
+      "end": 1710364423704,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710364423704,
+      "end": 1710364423704,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710364423704,
+      "end": 1710364423704,
+      "order": "normal"
+    }
+  ]
+}

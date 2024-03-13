@@ -1,0 +1,218 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/storyblok/Feature.vue?nuxt_component=async&nuxt_component_name=Feature",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div\n    v-editable=\"blok\"\n    class=\"w-full p-12 bg-[#f7f6fd] rounded-[5px] text-center\"\n  >\n    <h3 class=\"text-2xl text-[#1d243d] font-bold\">\n      {{ blok.name }}\n    </h3>\n\n    <p>\n      {{ blok.description }}\n    </p>\n  </div>\n</template>\n\n<script setup>\ndefineProps({ blok: Object });\n</script>\n",
+      "start": 1710364423721,
+      "end": 1710364424066,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710364424066,
+      "end": 1710364424066,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710364424066,
+      "end": 1710364424066,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710364424066,
+      "end": 1710364424066,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710364424066,
+      "end": 1710364424066,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710364424066,
+      "end": 1710364424066,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710364424066,
+      "end": 1710364424066,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710364424066,
+      "end": 1710364424066,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, resolveDirective as _resolveDirective, openBlock as _openBlock, createElementBlock as _createElementBlock, withDirectives as _withDirectives } from \"vue\"\n\nconst _hoisted_1 = { class: \"w-full p-12 bg-[#f7f6fd] rounded-[5px] text-center\" }\nconst _hoisted_2 = { class: \"text-2xl text-[#1d243d] font-bold\" }\n\n\nconst _sfc_main = {\n  __name: 'Feature',\n  props: { blok: Object },\n  setup(__props) {\n\n\n\nreturn (_ctx, _cache) => {\n  const _directive_editable = _resolveDirective(\"editable\")\n\n  return _withDirectives((_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"h3\", _hoisted_2, _toDisplayString(__props.blok.name), 1),\n    _createElementVNode(\"p\", null, _toDisplayString(__props.blok.description), 1)\n  ])), [\n    [_directive_editable, __props.blok]\n  ])\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1710364424066,
+      "end": 1710364424071,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710364424071,
+      "end": 1710364424071,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710364424071,
+      "end": 1710364424071,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710364424073,
+      "end": 1710364424073,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710364424073,
+      "end": 1710364424073,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/storyblok/Feature.vue\").then(r => r.default))",
+      "start": 1710364424073,
+      "end": 1710364424074,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710364424074,
+      "end": 1710364424074,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/storyblok/Feature.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1710364424074,
+      "end": 1710364424075,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710364424075,
+      "end": 1710364424075,
+      "order": "normal"
+    }
+  ]
+}

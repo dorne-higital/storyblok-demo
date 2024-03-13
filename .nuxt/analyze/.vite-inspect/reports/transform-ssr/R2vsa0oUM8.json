@@ -1,0 +1,263 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/assets/css/tailwind.css",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "@tailwind base;\n@tailwind components;\n@tailwind utilities;\n",
+      "start": 1710364427869,
+      "end": 1710364427990,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710364427990,
+      "end": 1710364427990,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710364427990,
+      "end": 1710364427990,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710364427990,
+      "end": 1710364427991,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710364427990,
+      "end": 1710364427991,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710364427991,
+      "end": 1710364427991,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "/*! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:\"\"}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:Roboto,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-tap-highlight-color:transparent}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-size:1em;font-variation-settings:normal}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-feature-settings:inherit;font-size:100%;font-variation-settings:inherit;font-weight:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.mx-auto{margin-left:auto;margin-right:auto}.my-12{margin-bottom:3rem;margin-top:3rem}.grid{display:grid}.w-full{width:100%}.place-items-center{place-items:center}.gap-12{gap:3rem}.rounded-\\[5px\\]{border-radius:5px}.bg-\\[\\#f7f6fd\\]{--tw-bg-opacity:1;background-color:#f7f6fd;background-color:rgb(247 246 253/var(--tw-bg-opacity))}.p-12{padding:3rem}.px-4{padding-left:1rem;padding-right:1rem}.py-32{padding-bottom:8rem;padding-top:8rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-6xl{font-size:3.75rem;line-height:1}.font-bold{font-weight:700}.text-\\[\\#1d243d\\]{--tw-text-opacity:1;color:#1d243d;color:rgb(29 36 61/var(--tw-text-opacity))}.text-\\[\\#50b0ae\\]{--tw-text-opacity:1;color:#50b0ae;color:rgb(80 176 174/var(--tw-text-opacity))}@media (min-width:768px){.md\\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}",
+      "start": 1710364427991,
+      "end": 1710364428542,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/assets/css/tailwind.css",
+        "mappings": "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",
+        "names": [],
+        "sources": [
+          "/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/assets/css/tailwind.css"
+        ],
+        "sourcesContent": [
+          "@tailwind base;\n@tailwind components;\n@tailwind utilities;\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710364428542,
+      "end": 1710364428542,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710364428542,
+      "end": 1710364428542,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710364428542,
+      "end": 1710364428542,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1710364428542,
+      "end": 1710364428542,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710364428542,
+      "end": 1710364428542,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710364428542,
+      "end": 1710364428542,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710364428542,
+      "end": 1710364428542,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710364428543,
+      "end": 1710364428543,
+      "order": "normal"
+    }
+  ]
+}

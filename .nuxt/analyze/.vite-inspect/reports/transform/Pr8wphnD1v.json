@@ -1,0 +1,17 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/node_modules/nuxt/dist/app/types.js",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "",
+      "start": 1710364425040,
+      "end": 1710364425040
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710364425040,
+      "end": 1710364425040,
+      "order": "normal"
+    }
+  ]
+}

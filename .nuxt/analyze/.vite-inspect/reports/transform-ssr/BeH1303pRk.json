@@ -1,0 +1,258 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/storyblok/Page.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div v-editable=\"blok\" class=\"px-4\">\n    <StoryblokComponent v-for=\"blok in blok.body\" :key=\"blok._uid\" :blok=\"blok\" />\n  </div>\n</template>\n\n<script setup>\ndefineProps({ blok: Object })\n</script>\n",
+      "start": 1710364428308,
+      "end": 1710364428693,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710364428693,
+      "end": 1710364428693,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710364428693,
+      "end": 1710364428693,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710364428693,
+      "end": 1710364428693,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710364428693,
+      "end": 1710364428693,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710364428693,
+      "end": 1710364428693,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710364428693,
+      "end": 1710364428693,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710364428693,
+      "end": 1710364428693,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710364428693,
+      "end": 1710364428693,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710364428693,
+      "end": 1710364428693,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { resolveComponent as _resolveComponent, mergeProps as _mergeProps, resolveDirective as _resolveDirective } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrGetDirectiveProps as _ssrGetDirectiveProps, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\n\nconst _sfc_main = {\n  __name: 'Page',\n  __ssrInlineRender: true,\n  props: { blok: Object },\n  setup(__props) {\n\n\n\nreturn (_ctx, _push, _parent, _attrs) => {\n  const _component_StoryblokComponent = _resolveComponent(\"StoryblokComponent\")\n  const _directive_editable = _resolveDirective(\"editable\")\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"px-4\" }, _attrs, _ssrGetDirectiveProps(_ctx, _directive_editable, __props.blok)))}><!--[-->`)\n  _ssrRenderList(__props.blok.body, (blok) => {\n    _push(_ssrRenderComponent(_component_StoryblokComponent, {\n      key: blok._uid,\n      blok: blok\n    }, null, _parent))\n  })\n  _push(`<!--]--></div>`)\n}\n}\n\n}\n\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"storyblok/Page.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nexport default _sfc_main",
+      "start": 1710364428693,
+      "end": 1710364428694,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/danielhorne/Desktop/Business/websites/Github/storyblok-demo/storyblok/Page.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <div v-editable=\"blok\" class=\"px-4\">\n    <StoryblokComponent v-for=\"blok in blok.body\" :key=\"blok._uid\" :blok=\"blok\" />\n  </div>\n</template>\n\n<script setup>\ndefineProps({ blok: Object })\n</script>\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;;AAMc;AACe;;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710364428694,
+      "end": 1710364428694,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710364428694,
+      "end": 1710364428695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710364428694,
+      "end": 1710364428695,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710364428695,
+      "end": 1710364428695,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710364428695,
+      "end": 1710364428695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710364428695,
+      "end": 1710364428695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710364428695,
+      "end": 1710364428695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1710364428695,
+      "end": 1710364428695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710364428695,
+      "end": 1710364428695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710364428695,
+      "end": 1710364428695,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710364428695,
+      "end": 1710364428696,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710364428696,
+      "end": 1710364428696,
+      "order": "normal"
+    }
+  ]
+}
