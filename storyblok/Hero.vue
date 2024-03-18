@@ -14,7 +14,11 @@
         {{ blok.description }}
       </p>
 
-      <img :src="block.image" alt="">
+      <img
+        :src="blok.image.filename"
+        :alt="blok.image.alt"
+        class="w-full h-48 xl:h-72 object-cover"
+      />
     </div>
   </template>
   
