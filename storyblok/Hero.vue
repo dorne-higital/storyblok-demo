@@ -15,7 +15,7 @@
       </p>
 
       <img
-        :src="blok.image.filename"
+        :src="blok.Image.filename"
         :alt="blok.image.alt"
         class="w-full h-48 xl:h-72 object-cover"
       />
