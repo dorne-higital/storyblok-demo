@@ -13,6 +13,8 @@
       <p>
         {{ blok.description }}
       </p>
+
+      <img :src="block.image" alt="">
     </div>
   </template>
   
