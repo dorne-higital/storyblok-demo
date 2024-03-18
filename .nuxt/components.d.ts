@@ -3,6 +3,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     'Feature': typeof import("../storyblok/Feature.vue")['default']
     'Grid': typeof import("../storyblok/Grid.vue")['default']
+    'Hero': typeof import("../storyblok/Hero.vue")['default']
     'Page': typeof import("../storyblok/Page.vue")['default']
     'Teaser': typeof import("../storyblok/Teaser.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -27,6 +28,7 @@ declare module 'vue' {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyFeature': typeof import("../storyblok/Feature.vue")['default']
     'LazyGrid': typeof import("../storyblok/Grid.vue")['default']
+    'LazyHero': typeof import("../storyblok/Hero.vue")['default']
     'LazyPage': typeof import("../storyblok/Page.vue")['default']
     'LazyTeaser': typeof import("../storyblok/Teaser.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -54,6 +56,7 @@ declare module 'vue' {
 
 export const Feature: typeof import("../storyblok/Feature.vue")['default']
 export const Grid: typeof import("../storyblok/Grid.vue")['default']
+export const Hero: typeof import("../storyblok/Hero.vue")['default']
 export const Page: typeof import("../storyblok/Page.vue")['default']
 export const Teaser: typeof import("../storyblok/Teaser.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -78,6 +81,7 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyFeature: typeof import("../storyblok/Feature.vue")['default']
 export const LazyGrid: typeof import("../storyblok/Grid.vue")['default']
+export const LazyHero: typeof import("../storyblok/Hero.vue")['default']
 export const LazyPage: typeof import("../storyblok/Page.vue")['default']
 export const LazyTeaser: typeof import("../storyblok/Teaser.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']

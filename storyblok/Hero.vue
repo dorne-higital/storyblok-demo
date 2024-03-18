@@ -1,15 +1,14 @@
 <template>
     <div
       v-editable="blok"
-      class="w-full p-12 bg-[#f7f6fd] rounded-[5px] text-center"
     >
-      <h2 class="text-[#1d243d] font-bold">
+      <h1>
         {{ blok.heading }}
-      </h2>
+      </h1>
 
-      <h5 class="text-[#1d243d] font-bold">
+      <h4>
         {{ blok.subheading }}
-      </h5>
+      </h4>
   
       <p>
         {{ blok.description }}
@@ -20,4 +19,10 @@
   <script setup>
   defineProps({ blok: Object });
   </script>
+
+    <style>
+        h1 {
+            font-size: 3rem;
+        }
+    </style>
   
