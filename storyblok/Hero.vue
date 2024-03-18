@@ -16,8 +16,8 @@
 
       <img
         :src="blok.Image.filename"
-        :alt="blok.image.alt"
-        class="w-full h-48 xl:h-72 object-cover"
+        :alt="blok.Image.alt"
+        class=""
       />
     </div>
   </template>
@@ -29,6 +29,9 @@
     <style>
         h1 {
             font-size: 3rem;
+        }
+        h4 {
+            font-size: 1.5rem;
         }
     </style>
   
